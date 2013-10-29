@@ -26,7 +26,7 @@
         <?php 
         $message = getenv(POWERED_BY);
         if (!isset($message) || empty($message)) {
-            message = "Deis";
+            $message = "Deis";
         }
         echo "Powered by" . $message; 
         ?>
