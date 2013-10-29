@@ -28,7 +28,7 @@
         if (!isset($message) || empty($message)) {
             $message = "Deis";
         }
-        echo "Powered by" . $message; 
+        echo "Powered by " . $message; 
         ?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
