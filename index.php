@@ -23,7 +23,13 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <?php echo "Powered by Deis"; ?>
+        <?php 
+        $message = getenv(POWERED_BY);
+        if (!isset($message) || empty($message)) {
+            message = "Deis";
+        }
+        echo "Powered by" . $message; 
+        ?>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
