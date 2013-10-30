@@ -103,7 +103,7 @@ To scale your application's [Docker](http://docker.io) containers, use `deis sca
 	Scaling containers... but first, coffee!
 	done in 19s
 	
-	=== jagged-playroom Containers
+	=== <appName> Containers
 	
 	--- web: `sh boot.sh`
 	web.1 up 2013-10-28T20:23:58.904Z (phpFormation-runtime-1)
