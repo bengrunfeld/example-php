@@ -34,7 +34,7 @@ If you're deploying the example application, it already conforms to these requir
 
 #### 1. Use Composer to manage dependencies
 
-Pip requires that you explicitly declare your dependencies using a `composer.json` file that sits in the root directory of your project. Here is a very basic example:
+Composer requires that you explicitly declare your dependencies using a `composer.json` file that sits in the root directory of your project. Here is a very basic example:
 
 	{ 
 		"require": { 
@@ -55,11 +55,7 @@ Deis relies on a [Foreman](http://ddollar.github.com/foreman/) `Procfile` that l
 
 This tells Deis to run `web` workers using the command `sh boot.sh`. 
 
----
-
-**You may be unable to test locally with `foreman start`.**
-
----
+Since PHP runs explicitly on a web server, you won't be able to use `Foreman` locally. Rather, test locally using Xampp or Mamp Pro.
 
 #### 3. Use Environment Variables to manage configuration
 
